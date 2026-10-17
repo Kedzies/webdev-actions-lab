@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     display: grid;
     place-items: center;
+    transition: background 0.3s;
 }
 
 .card {
@@ -13,6 +14,9 @@ body {
     border-radius: 18px;
     box-shadow: 0 12px 32px #1e3a5f20;
     text-align: center;
+    max-width: 520px;
+    margin: 24px;
+    transition: background 0.3s, color 0.3s;
 }
 
 button {
@@ -22,4 +26,39 @@ button {
     padding: 12px 22px;
     border-radius: 8px;
     cursor: pointer;
+    margin: 4px;
+}
+
+section {
+    text-align: left;
+    margin-top: 28px;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+}
+
+h2 {
+    color: #e65100;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #1769aa;
+}
+
+/* Dark theme */
+body.dark {
+    background: #121212;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    color: #eee;
+}
+
+body.dark section {
+    border-top-color: #444;
+}
+
+body.dark a {
+    color: #64b5f6;
 }
